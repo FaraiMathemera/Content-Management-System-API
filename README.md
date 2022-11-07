@@ -13,11 +13,13 @@ Get PG4 Admin installed and setup.
 ### Setup ENV
 Create an .env file in the root directory with the below parameters.
 
+```
 NODE_ENV="development"
 PORT=""
 USERNAME=""
 PASSWORD=""
 DATABASE=""
+```
 
 PORT - any port of your choice
 USERNAME - Your postgresql username usual "postgres"
