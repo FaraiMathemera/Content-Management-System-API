@@ -3,25 +3,56 @@ import sequelize from "../../config/database.config";
 
 /**
  * @swagger
+ * tags:
+ *   name: Article
+ *   description: Article managing API
+ */
+
+/**
+ * @swagger
  * components:
- *  schemas:
- *    Article:
- *      type: object
- *      required:
- *        - title
- *        - articleBody
- *        - authorName
- *      properties:
- *
+ *   schemas:
+ *     Article:
+ *       type: object
+ *       required:
+ *         - title
+ *         - articleBody
+ *         - authorName
+ *       properties:
+ *         id:
+ *           type: number
+ *           description: Id of article auto increment
+ *         title:
+ *           type: string
+ *           description: Title of Article
+ *         authorName:
+ *           type: string
+ *           description: The name of the author
+ *         articleBody:
+ *           type: string
+ *           description: Body of the article
+ *         published:
+ *           type: boolean
+ *           description: Published state of article
+ *         publishedOn:
+ *           type: date
+ *           description: Published date of article
+ *       example:
+ *         id: 1
+ *         title: Sample Title
+ *         authorName: John Doe
+ *         articleBody: some sort of text that mimics the body of an article. Who knows what else it might contain.
+ *         published: false
+ *         publishedOn: 2022-11-07 11:01:20.651+02
  */
 
 interface ArticleAttributes {
   id?: number;
   title: string;
   articleBody: string;
-  publishedOn: Date;
+  publishedOn?: Date;
   authorName: string;
-  published: boolean;
+  published?: boolean;
 }
 
 export class Article extends Model<ArticleAttributes> {}
