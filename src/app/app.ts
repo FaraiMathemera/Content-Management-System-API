@@ -2,6 +2,9 @@ import express from "express";
 import ArticleRouter from "./routes";
 import swaggerJsDoc from "swagger-jsdoc";
 import swaggerUI from "swagger-ui-express";
+require("dotenv").config();
+
+const port = process.env.PORT || 3000;
 
 const options = {
   definition: {
@@ -11,7 +14,7 @@ const options = {
       version: "1.0.0",
       description: "Content management system API",
     },
-    servers: [{ url: "http://localhost:3001" }],
+    servers: [{ url: `http://localhost:${port}` }],
   },
   apis: ["./src/app/routes/*.ts", "./src/app/models/*.ts"],
 };
