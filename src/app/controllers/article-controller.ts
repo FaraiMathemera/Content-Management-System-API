@@ -5,7 +5,6 @@ class ArticleController {
   async createArticle(req: Request, res: Response) {
     try {
       const body = req.body;
-      console.log(body);
       await sequelize.transaction(async (transaction) => {
         await Article.create(body, { transaction });
       });
@@ -15,13 +14,11 @@ class ArticleController {
     }
   }
   async getOneArticle(req: Request, res: Response) {
-    console.log(sequelize.models);
     try {
       const articleId = req.params.id;
       const article = await Article.findByPk(articleId);
       return res.status(200).json(article);
     } catch (error) {
-      console.log(error);
       return res.status(400).json(error);
     }
   }
