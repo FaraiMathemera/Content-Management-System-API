@@ -44,3 +44,6 @@ npm run dev
 ```
 sequelize db:migrate
 ```
+## Swagger Docs
+
+Documentation available at http://localhost:{PORT SPECIFIED ABOVE}/api-docs/
