@@ -29,7 +29,7 @@ DATABASE=""
 - PORT -> any port of your choice
 - USERNAME -> Your postgresql username usual "postgres"
 - PASSWORD -> Your postgresql password
-- DATABASE -> If you do not have a db you should create one and declare it in DATABASE
+- DATABASE -> If you do not have a db you should create one and declare it in here
 
 ## Run locally
 
