@@ -1,4 +1,4 @@
-require("dotenv").config();
+require("dotenv").config({ path: './../.env' });
 
 module.exports = {
   development: {
@@ -9,3 +9,5 @@ module.exports = {
     dialect: "postgres",
     logging: false,
   }}
+
+  console.log(process.env.DB_USERNAME)
