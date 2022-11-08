@@ -11,6 +11,7 @@ Get PG4 Admin installed and setup.
  
 ## Installation
 
+Run from root folder
 ```
 npm install
 ```
@@ -32,6 +33,8 @@ DATABASE=""
 - DATABASE -> If you do not have a db you should create one and declare it in here
 
 ## Run locally
+
+Run from root folder
 
 ```
 npm run dev
