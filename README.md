@@ -46,4 +46,4 @@ sequelize db:migrate
 ```
 ## Swagger Docs
 
-Documentation available at http://localhost:{PORT SPECIFIED ABOVE}/api-docs/
+Documentation available at http://localhost:{PORT_SPECIFIED_ABOVE}/api-docs/
