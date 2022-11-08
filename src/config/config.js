@@ -9,5 +9,3 @@ module.exports = {
     dialect: "postgres",
     logging: false,
   }}
-
-  console.log(process.env.DB_USERNAME)

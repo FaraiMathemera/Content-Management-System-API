@@ -51,7 +51,6 @@ class ArticleController {
     try {
       const articleId = req.params.id;
       const state = req.body;
-      console.log(state);
       await sequelize.transaction(async (transaction) => {
         await Article.update(state, { where: { id: articleId }, transaction });
       });
