@@ -61,7 +61,7 @@ router.get("/", ArticleController.getAllArticles);
  *             schema:
  *               $ref: '#/components/schemas/Article'
  *       400:
- *         description: Article does not exist
+ *         description: Errors occurred during creation
  */
 
 router.post(
@@ -148,7 +148,7 @@ router.get(
  *             schema:
  *               $ref: '#/components/schemas/Article'
  *       400:
- *         description: Article was not update
+ *         description: Article was not updated
  */
 
 router.put(
