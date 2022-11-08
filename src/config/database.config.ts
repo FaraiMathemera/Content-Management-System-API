@@ -1,14 +1,13 @@
 import { Sequelize } from "sequelize";
-import pg from "pg";
+require("dotenv").config();
 
 const db = new Sequelize({
-  dialect: "postgres",
+  username: process.env.USERNAME,
+  password: process.env.PASSWORD,
+  database: process.env.DATABASE,
   host: "localhost",
-  port: 5432,
-  database: "mydb",
-  username: "postgres",
-  password: "admin",
-  logging: true,
+  dialect: "postgres",
+  logging: false,
 });
 
 export default db;
