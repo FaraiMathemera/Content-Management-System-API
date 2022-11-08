@@ -65,7 +65,7 @@ Article.init(
       autoIncrement: true,
       allowNull: false,
     },
-    title: { type: DataTypes.INTEGER, allowNull: false },
+    title: { type: DataTypes.STRING, allowNull: false },
     articleBody: { type: DataTypes.STRING, allowNull: false },
     publishedOn: { type: DataTypes.DATE, allowNull: true },
     authorName: { type: DataTypes.STRING, allowNull: false },
