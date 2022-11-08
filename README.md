@@ -1,16 +1,21 @@
 # Content Management System API
  Backend Developer Assessment
  
+## Prerequisites
+- Node JS
+- PostgreSQL
+
+### Download PostgreSQL
+
+Get PG4 Admin installed and setup.
+ 
 ## Installation
 
 ```
 npm install
 ```
-### Download PostgreSQL
 
-Get PG4 Admin installed and setup.
-
-### Setup ENV
+## Setup ENV
 Create an .env file in the root directory with the below parameters.
 
 ```
