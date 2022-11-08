@@ -21,13 +21,13 @@ Create an .env file in the root directory with the below parameters.
 ```
 NODE_ENV="development"
 PORT=""
-USERNAME=""
+DB_USERNAME=""
 PASSWORD=""
 DATABASE=""
 ```
 
 - PORT -> any port of your choice
-- USERNAME -> Your postgresql username usual "postgres"
+- DB_USERNAME -> Your postgresql username usual "postgres"
 - PASSWORD -> Your postgresql password
 - DATABASE -> If you do not have a db you should create one and declare it in here
 
@@ -39,7 +39,7 @@ npm run dev
 
 ## Run Migrations
 
- Run the migration that will create the table needed to run this project
+ Run the migration that will create the table needed to run this project from the src folder
  
 ```
 sequelize db:migrate
